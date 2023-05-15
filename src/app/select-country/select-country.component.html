@@ -1,0 +1,8 @@
+<div>
+  <p>Pays: <input type="text" #input /></p>
+  <ul class="paysListe" *ngIf="paysListeView.length > 0">
+    <li *ngFor="let pays of paysListeView" (click)="getPays($event)">
+      {{ pays.libelle }}
+    </li>
+  </ul>
+</div>
